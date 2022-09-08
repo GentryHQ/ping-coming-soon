@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,300;0,600;0,700;1,300;1,600;1,700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+:root {
+    /* color variable  */
+    --primary-color-blue: hsl(223, 87%, 63%);
+    --secondary-pale-blue: hsl(223, 100%, 88%);
+    --secondary-light-red: hsl(354, 100%, 66%);
+    --Neutral--Gray: hsl(0, 0%, 59%);
+    --neutral-very-dark-blue: hsl(209, 33%, 12%);
+}
+
+body {
+    margin: 100px 0;
+    text-align: center;
+}
+
+/* Reuseable */
+
+a {
+    text-decoration: none;
+}
+button {
+    display: inline-block;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 3rem;
+}
+
+/* header */
+.main-heading {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    font-size: 2rem;
+    font-weight: 300;
+    color: var(--Neutral--Gray);
+}
+.main-heading span {
+    color: var(--neutral-very-dark-blue);
+    font-weight: 600;
+}
+.hero p{
+    font-size: 18px;
+    font-weight: 300;
+    padding-bottom: 50px;
+}
+
+/* Form */
+input{
+    border-radius: 50px;
+    width: 100%;
+    height: 60px;    
+    border: 2px solid var(--secondary-pale-blue);
+    padding: 0 20px;
+    outline: var(--neutral-very-dark-blue);
+    margin-bottom: 20px;
+}
+.submit {
+    background-color: var(--primary-color-blue);
+    margin-top: 10px;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 50px;
+    padding: 20px ;
+    width: 100%;
+    box-shadow: 0 15px 20px 1px hsl(223, 100%, 88%);
+}
+.submit:hover {
+    cursor: pointer;
+}
+
+/* form error */
+.error {
+    color: var(--secondary-light-red);
+    padding-top: 20px;
+    font-weight: 600;
+    font-style: italic;
+    text-align: center;
+}
+
+#mail.errorForm {
+    border-color: var(--secondary-light-red);
+}
+
+/* Image section */
+.shot {
+    width: 100%;
+    margin-top: 100px;
+}
+
+/* Footer */
+.foot {
+    margin: 100px 0;
+}
+.foot {
+    text-decoration: none;
+}
+.icon {
+    margin-left: 20px;
+    border: 1px solid var(--secondary-pale-blue);
+    padding: 13px;
+    border-radius: 50px;
+    width: 3rem;
+}
+.fb {
+    width: 2.5rem;    
+    margin-left: 40px;
+}
+.copyright {
+    margin-top: 30px;
+    font-size: 16px;
+}
+
+/* Media Query */
+
+@media screen and (min-width:768px) {
+   
+    /* form */
+
+    #mail {
+        width: 70%;
+        display: inline;
+    }
+    .submit{
+        display: inline;
+        width: 25%;
+        margin-left: 20px;
+    }
+    
+    /* Error text */
+    .error {
+        text-align: left;
+        margin-left: 30px;
+    }
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Ping coming soon page</title>
+</head>
+
+<body>
+    <header class="hero" role="banner">
+        <div class="container">
+            <a href="/home.html"><img src="./images/logo.svg" alt="Logo" class="logo"></a>
+
+            <h1 class="main-heading">We are launching <span>soon!</span></h1>
+
+            <p>Subscribe and get notified</p>
+        </div>
+    </header>
+
+    <section class="form" role="form">
+        <div class="container">
+            <form class="subscriber" id="sub">
+                <input type="email" name="email" id="mail" placeholder="Your email address..." autocomplete="email">
+
+                <button type="submit" id="submit-btn" class="submit">Notify Me</button>
+
+                <p class="error" id="error"></p>
+            </form>
+        </div>
+    </section>
+
+    <section class="main container" role="img">
+        <img src="./images/illustration-dashboard.png" alt="illustration-dashboard" class="shot">
+    </section>
+
+    <footer class="foot" role="contentinfo">
+        <div class="container">
+            <span class="icons">
+               <a href="#"><img src="./images/facebook-f-brands.svg" alt="facebook logo" class="fb icon"></a>
+
+               <a href="twitter.com/iam_gentry/"><img src="./images/logo-twitter.svg" alt="Twitter Logo" class="tw icon">
+               </a>
+
+               <a href="#"><img src="./images/logo-instagram.svg" alt="Instagram logo" class="ig icon"></a>
+            </span>
+        
+            <p class="copyright">&copy; Copyright Ping. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="./app.js" defer></script>
+</body>
+</html>
